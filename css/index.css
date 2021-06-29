@@ -1,0 +1,57 @@
+*global role*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Work Sans', sans-serif;
+}
+@media (min-width: 768px){
+	.container{
+		width: 700px;
+	}
+}
+
+@media (min-width: 992px){
+	.container{
+		width: 900px;
+	}
+}
+@media (min-width: 1200px){
+	.container{
+		width: 1000px;
+	}
+}
+
+/* header */
+
+.header{
+	background-color: #ddd;
+}
+.container{
+	margin: auto;
+	padding: 10px;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container img{
+	width: 60px;
+}
+
+.container .links{
+	display: flex;
+    position: relative;
+    border: 1px solid;
+}
+
+
+.container .links ul{
+	list-style: none;
+    display: inherit;
+}
+
+
+
+
+
