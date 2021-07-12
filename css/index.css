@@ -155,7 +155,7 @@ body{
 /* landing */
 
 .landing{
-	background-image: url(mountain.webp);
+	background-image: url(../img/back.jpg);
 	background-size: cover;
 	height: calc(100vh - 44px);
     position: relative;
