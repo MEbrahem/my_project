@@ -1,4 +1,5 @@
 
+
 /* variable */
 :root{
 	--main-color: #10cab7;
@@ -26,13 +27,13 @@
 		font-size: 15px;
 	}
 }
+
 /* special heading */
 
 *global role*/
 *{
 	box-sizing: border-box;
 }
-
 body{
 	font-family: 'Work Sans', sans-serif;
 }
@@ -91,7 +92,6 @@ body{
 
 }
 .header .links ul::before{
-	content: "";
 	content: "";
     border-width: 14px;
     border-style: solid;
@@ -198,12 +198,6 @@ position: absolute;
 .features .feat{
 	padding: 10px;
 	text-align: center;
-	transition: .3s;
-}
-.features .feat:hover{
-	transform: scale(1.2,1.2);
-	box-shadow: 0px 2px 3px ;
-	cursor: pointer;
 }
 .features .feat i{
 	color: var(--main-color);
@@ -217,6 +211,12 @@ font-weight: 800;
 	color: #555;
     font-weight: 200;
     line-height: 1.5;
+}
+@media(max-width: 1200px){
+	.features .container{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /*  end features */
@@ -440,3 +440,78 @@ display: inline-block;
 }
 }
 /*  end About */
+/*  start Contact */
+.Contact{
+	background: #ddd;
+	padding-top:20px ;
+	padding-bottom:20px ;
+	text-align: center;
+}
+.Contact .container{
+	display: block;
+	padding: 10px;
+}
+.Contact .Contact-content{
+	margin-top: 60px;
+    margin-bottom: 60px;
+}
+.Contact .Contact-content .label{
+	font-size: 35px;
+    letter-spacing: -2px;
+    font-weight: 900;
+    color: #2c4755;
+}
+.Contact .Contact-content a{
+	text-decoration: none;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+
+}
+/*.Contact .Contact-content .link:after{
+	content: "";
+	position: absolute;
+    width: calc(100% + 45px);
+    background: #f6f6f6;
+    height: 60%;
+    bottom: -10px;
+    right: 0px;
+    z-index: -1;
+}*/
+.Contact .Contact-content .social{
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	font-size: 10px;
+
+}
+.Contact .Contact-content .social i{
+	font-size: 15px;
+    color: #2c4755;
+    margin-left: 10px;
+}
+@media(max-width: 720px){
+	.Contact .Contact-content .label{
+		font-size: 28px;
+	}
+	.Contact .Contact-content a{
+		font-size: 23px;
+	}
+}
+
+/*  end Contact */
+/*  start footer */
+.footer{
+	background: #2c4755;
+	color: #f2f2f2;
+	padding: 25px 10px;
+	text-align: center;
+	letter-spacing: -1px;
+	font-weight: 800;
+
+}
+.footer span{
+	color: var(--main-color);
+}
+/*  end footer */
+
