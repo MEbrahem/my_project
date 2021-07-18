@@ -173,7 +173,7 @@ body{
 	opacity: 0.9;
     position: absolute;
     bottom: 120px;
-    animation: animate calc(5s * var(--i)) linear infinite;
+    -webkit-animation: animate calc(5s * var(--i)) linear infinite;
 }
 @media(max-width: 700px){
 	.landing .cloud img{
